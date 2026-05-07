@@ -18,7 +18,7 @@ The project simulates a real-world enterprise retail data warehouse system that 
 
 # Architecture Overview
 
-<img width="1024" height="1536" alt="architecture" src="https://github.com/user-attachments/assets/fc839d24-0817-46db-864f-1bda75633d57" />
+<img width="512" height="512" alt="architecture" src="https://github.com/user-attachments/assets/fc839d24-0817-46db-864f-1bda75633d57" />
 
 
 ---
