@@ -22,6 +22,7 @@ The project simulates a real-world enterprise retail data warehouse system that 
 
 The Retail ETL Data Warehouse project follows a Star Schema architecture where the central `FACT_SALES` table stores transactional sales data such as quantity sold, revenue amount, transaction date, and foreign keys referencing multiple dimension tables including `DIM_CUSTOMER`, `DIM_PRODUCT`, and `DIM_STORE`. The dimension tables contain descriptive business information used for analytics and reporting, such as customer details, product categories, and store regions. The `DIM_CUSTOMER` table additionally implements SCD Type-2 logic to maintain historical customer changes using active/inactive records along with start and end dates. This schema enables efficient analytical querying, business KPI generation, revenue analysis, customer insights, regional reporting, and dashboard visualization while supporting scalable and optimized warehouse operations using Delta Lake and medallion architecture principles.
 
+<img width="512" height="512" alt="Tables architecture" src="https://github.com/user-attachments/assets/cd381175-c93e-40d0-92d3-8dbfa85f2783" />
 
 
 ---
