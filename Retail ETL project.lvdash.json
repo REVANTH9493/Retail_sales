@@ -440,8 +440,8 @@
                   "datasetName": "c8fa5539",
                   "fields": [
                     {
-                      "name": "count(*)",
-                      "expression": "COUNT(`*`)"
+                      "name": "countdistinct(CustomerID)",
+                      "expression": "COUNT(DISTINCT `CustomerID`)"
                     }
                   ],
                   "disaggregated": false
@@ -457,7 +457,7 @@
               "widgetType": "counter",
               "encodings": {
                 "value": {
-                  "fieldName": "count(*)"
+                  "fieldName": "countdistinct(CustomerID)"
                 }
               }
             }
@@ -518,8 +518,8 @@
                   "datasetName": "bd0b3fcb",
                   "fields": [
                     {
-                      "name": "monthly(TxnDate)",
-                      "expression": "DATE_TRUNC(\"MONTH\", `TxnDate`)"
+                      "name": "weekly(TxnDate)",
+                      "expression": "DATE_TRUNC(\"WEEK\", `TxnDate`)"
                     },
                     {
                       "name": "sum(TotalRevenue)",
@@ -535,7 +535,7 @@
               "widgetType": "line",
               "encodings": {
                 "x": {
-                  "fieldName": "monthly(TxnDate)",
+                  "fieldName": "weekly(TxnDate)",
                   "scale": {
                     "type": "temporal"
                   }
